@@ -1,0 +1,137 @@
+.masa-detay-container {
+  display: flex;
+  height: auto; /* Mobil ve tablet için yüksekliği otomatik ayarlıyoruz */
+  min-height: 100vh; /* Minimum yüksekliği ekran yüksekliği kadar yapıyoruz */
+  font-family: Arial, sans-serif;
+  flex-direction: column; /* Varsayılan olarak alt alta sıralıyoruz */
+  }
+  
+  .urun-listesi,
+  .islemler-paneli {
+    flex: 1;
+    background-color: #000000;
+    border: 1px solid #ccc; /* İsteğe bağlı: sınır ekleyebilirsiniz */
+    padding: 10px; /* İsteğe bağlı: iç boşluk ekleyebilirsiniz */
+    height: auto; /* İsteğe bağlı: sabit bir yükseklik belirleyebilirsiniz */
+    overflow-y: auto; /* Dikey kaydırmayı aktif eder */
+    margin-bottom: 15px; /* Elemanlar arasında boşluk */
+  }
+
+  
+  .urun-listesi h3,
+  .islemler-paneli h3,
+  .siparis-tablosu h3 {
+    text-align: center;
+  }
+  
+  .urun-buton {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(238, 238, 238);
+    border: 3px solid #af8808;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .siparis-tablosu {
+    flex: none; /* Mobil ve tablette esnekliği kaldırıyoruz */
+    padding: 20px;
+  }
+  
+  .toplam-fiyat {
+    text-align: center;
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  thead tr {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    align-items: center;
+  }
+  
+  .sil-buton {
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .temizle-buton {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #c02b2b;
+    border: 1px solid #af8808;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .kaydet-buton {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #20b13f;
+    border: 1px solid #af8808;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .odeme-buton {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #3d17e7;
+    border: 1px solid #af8808;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .toplam-fiyat {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4caf50; /* Green color to match the screenshot */
+  }
+ /* Tabletler için (768px ve üzeri) */
+@media (min-width: 768px) {
+  .masa-detay-container {
+    flex-direction: row; /* Tablette yan yana sıralıyoruz */
+  }
+
+  .urun-listesi,
+  .islemler-paneli {
+    flex: 1;
+    margin-right: 15px;
+    margin-bottom: 0; /* Yan yana olduğu için alt boşluğu kaldırıyoruz */
+  }
+
+  .siparis-tablosu {
+    flex: 2;
+  }
+
+  .urun-buton {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+
+  .toplam-fiyat {
+    font-size: 1.3rem;
+  }
+
+  .temizle-buton,
+  .kaydet-buton,
+  .odeme-buton {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+}

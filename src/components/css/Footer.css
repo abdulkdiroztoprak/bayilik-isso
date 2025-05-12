@@ -1,0 +1,83 @@
+.footer {
+  background-color: #282c34; /* Match App.css background */
+  color: #ffffff; /* White text */
+  padding: 50px 20px; /* Increased padding for better spacing */
+  border-top: 1px solid #444; /* Subtle separator */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Kutu aralarında boşluk bırakır */
+  gap: 20px; /* Kutu arası ekstra boşluk */
+  max-width: 1200px;
+  margin: 0 auto; /* Ortalamak için */
+  flex-wrap: wrap; /* Küçük ekranlarda alt alta düşebilir */
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.footer-logo-text {
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px; /* Increased spacing below logo text */
+}
+
+.footer-logo .MuiTypography-body2 {
+  color: #cccccc; /* Light gray for tagline */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Center-align links for consistency */
+}
+
+.footer-links li {
+  margin-bottom: 12px; /* Slightly increased spacing between links */
+}
+
+.footer-links a {
+  color: #cccccc; /* Light gray for links */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center-align icon and text */
+}
+
+.footer-links a:hover {
+  color: #1e90ff; /* Blue on hover, matching App.css links */
+  text-decoration: underline;
+}
+
+.footer-icon {
+  margin-right: 8px;
+  font-size: 1.2rem; /* Slightly larger icon */
+  color: #cccccc; /* Match link color */
+}
+
+.footer-links a:hover .footer-icon {
+  color: #1e90ff; /* Blue on hover, matching link */
+}
+
+.footer-contact {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 12px 0; /* Consistent spacing */
+  text-align: center; /* Center-align for consistency */
+}
+
+.footer-note {
+  margin-top: 12px;
+  color: #cccccc;
+  text-align: center; /* Center-align for consistency */
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 30px; /* Increased spacing above copyright */
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}

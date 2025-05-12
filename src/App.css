@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+.app-container {
+  font-family: Arial, sans-serif;
+  background-color: #282c34; /* Dark background from original App.css */
+  color: #e0e0e0; /* Light text for readability */
+  min-height: 100vh; /* Full viewport height */
+  text-align: center; /* From original .App style */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  padding: 20px;
+  background-color: #323641; /* Slightly lighter dark for content area */
+  border-radius: 8px;
+  margin: 20px;
+  color: #ffffff; /* White text for content */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style the hr to match the dark theme */
+hr {
+  border: 1px solid #444; /* Subtle gray line */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
+/* Optional: If you want to use App-link for links in Menu or Iletisim */
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* Light blue from original App.css */
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-link:hover {
+  color: #1e90ff; /* Brighter blue on hover */
 }

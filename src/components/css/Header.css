@@ -1,0 +1,46 @@
+.header {
+    background-color: #f8f8f8; /* Açık gri bir arka plan */
+    padding: 20px 0; /* Üst ve alt boşluk */
+    border-bottom: 1px solid #eee; /* Alt çizgi */
+  }
+  
+  .container {
+    display: flex; /* Öğeleri yan yana sıralamak için flexbox kullanıyoruz */
+    justify-content: space-between; /* Logo ve navigasyonu aralarına boşluk bırakarak yerleştiriyoruz */
+    align-items: center; /* Dikey olarak ortalıyoruz */
+    max-width: 1200px; /* Maksimum genişlik */
+    margin: 0 auto; /* Yatayda ortalamak için */
+    padding: 0 20px; /* Yanlarda boşluk */
+  }
+  
+  .logo h1 {
+    margin: 0; /* Başlığın varsayılan boşluklarını kaldırıyoruz */
+    font-size: 24px; /* Logo font boyutu */
+    color: #333; /* Logo rengi */
+  }
+  
+  .navigation ul {
+    list-style: none; /* Liste işaretlerini kaldırıyoruz */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Linkleri yan yana sıralamak için */
+  }
+  
+  .navigation li {
+    margin-left: 20px; /* Linkler arasında boşluk */
+  }
+  
+  .navigation li:first-child {
+    margin-left: 0; /* İlk linkin sol boşluğunu kaldırıyoruz */
+  }
+  
+  .navigation a {
+    text-decoration: none; /* Alt çizgiyi kaldırıyoruz */
+    color: #555; /* Link rengi */
+    font-weight: bold; /* Kalın yazı tipi */
+    transition: color 0.3s ease; /* Renk geçiş efekti */
+  }
+  
+  .navigation a:hover {
+    color: #e44d26; /* Üzerine gelindiğinde renk */
+  }

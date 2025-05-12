@@ -1,0 +1,51 @@
+.masalar-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* ortalamak isterseniz */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  
+  .masa-button {
+    width: 180px;
+    height: 120px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Tablet için ideal yükseklik */
+  }
+  
+  /* Telefonlar için (genişlik 768px'e kadar olan cihazlar için geçerli olacaktır) */
+@media (max-width: 768px) {
+  .masalar-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Telefonlarda daha küçük butonlar */
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .masa-button {
+    font-size: 0.9em;
+    height: 80px;
+  }
+}
+
+/* Daha büyük tabletler ve masaüstü için (769px ve üzeri genişlikler) */
+@media (min-width: 769px) {
+  .masalar-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Daha geniş ekranlarda daha büyük butonlar */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .masa-button {
+    font-size: 1.1em;
+    height: 120px;
+  }
+}
