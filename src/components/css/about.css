@@ -1,0 +1,157 @@
+.about-container {
+  padding: 20px;
+  font-family: sans-serif;
+  color: #d3d3d3; /* Açık gri metin */
+  background-color: #222; /* Koyu arka plan */
+}
+
+.about-hero {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #333; /* Biraz daha açık koyu arka plan */
+  margin-bottom: 30px;
+}
+
+.about-hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #f08080; /* Açık kırmızı/pembe vurgu */
+}
+
+.about-hero p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #a9a9a9; /* Orta gri paragraf metni */
+}
+
+.our-values,
+.our-team {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.our-values h2,
+.our-team h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #f08080; /* Açık kırmızı/pembe vurgu */
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card,
+.team-card {
+  background-color: #333; /* Koyu kart arka planı */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Daha belirgin gölge */
+  text-align: center;
+  border: 1px solid #444; /* Biraz daha koyu kenarlık */
+  color: #d3d3d3; /* Açık gri metin rengi */
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #fff; /* Beyaz başlık */
+}
+
+.card p {
+  line-height: 1.5;
+  color: #ccc; /* Biraz daha açık gri metin */
+}
+
+.team-card .team-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 1px solid #555; /* Daha koyu kenarlık */
+}
+
+.team-card h3 {
+  margin-bottom: 5px;
+  color: #fff; /* Beyaz başlık */
+}
+
+.team-card .team-title {
+  color: #a9a9a9; /* Orta gri başlık altı metni */
+  font-size: 0.9em;
+}
+
+
+.our-values {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.our-values h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #f08080; /* Vurgu renginiz */
+}
+
+.our-values .card-grid { /* Sadece bu bölümdeki card-grid'i hedefliyoruz */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Kartların minimum genişliği ayarlandı */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.our-values .card { /* Sadece bu bölümdeki card'ı hedefliyoruz */
+  background-color: #333;
+  padding: 10px; /* Resimler için daha az padding uygun olabilir */
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  text-align: center; /* Resimleri ortalamak için (gerekirse) */
+  border: 1px solid #444;
+  color: #d3d3d3;
+  display: flex; /* Flexbox kullanarak resmi ortalayabiliriz */
+  align-items: center; /* Dikeyde ortala */
+  justify-content: center; /* Yatayda ortala */
+  overflow: hidden; /* Resimlerin taşımasını engellemek için */
+}
+
+.our-values .card img {
+  width: 100%; /* Kartın genişliğinin %100'ü kadar olsun */
+  height: 100%; /* Kartın yüksekliğinin %100'ü kadar olsun */
+  object-fit: contain; /* ResminAspectRatio'unu koruyarak kutuya sığdır (boşluk kalabilir) */
+  /* object-fit: cover; !* ResmiAspectRatio'unu koruyarak kutuyu kapla (kesilebilir) *! */
+  /* object-fit: scale-down; !* Resim küçükse gerçek boyutta, büyükse sığdırır *! */
+}
+
+.social-links {
+  display: flex;
+  gap: 20px; /* İkonlar arasında boşluk */
+  margin-top: 20px; /* Metinle ikonlar arasında boşluk */
+  justify-content: center; /* İkonları ortalamak için (isteğe bağlı) */
+}
+
+.social-icon {
+  cursor: pointer;
+  color: #555; /* İkon rengi (isteğe bağlı) */
+  transition: color 0.3s ease; /* Renk geçiş efekti (isteğe bağlı) */
+}
+
+.social-icon:hover {
+  color: #0077b5; /* LinkedIn hover rengi (isteğe bağlı) */
+}
+
+.social-icon:nth-child(2):hover { /* İkinci ikon (Instagram) hover rengi (isteğe bağlı) */
+  color: #c13584;
+}
+
+/* ... diğer CSS kodlarınız ... */
+/* Mobil cihazlar için düzenlemeler (aynı kalabilir veya daha da koyulaştırılabilir) */
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}

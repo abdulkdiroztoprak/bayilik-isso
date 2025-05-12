@@ -7,68 +7,55 @@ function Menu() {
   const menuItems = [
     {
       title: "Fıstık Dilimi",
-     
       image: "/image/1_1.jpg",
     },
     {
       title: "1 Kişilik Sıkım",
-     
       image: "/image/6.jpg",
     },
     {
       title: "Special Dürüm",
-    
       image: "/image/1_6.jpg",
     },
     {
-      title: "Bir Kişilik Sunum",
-   
+      title: "Karışık Sunum",
       image: "/image/1_3.jpg",
     },
     {
-      title: "Fıstık Dilimi",
-      
-      image: "/image/1_1.jpg",
+      title: "Paşa Dilimi",  
+      image: "/image/pasa.png",
     },
     {
-      title: "Bir Kişilik Sunum",
-    
-      image: "/image/6.jpg",
+      title: "Cips Dilimi",
+      image: "/image/cips.png",
     },
     {
-      title: "Special Dürüm",
-     
-      image: "/image/1_6.jpg",
+      title: "Çiğ Köfte Dürüm",
+      image: "/image/images.jpeg",
     },
    
     {
-      title: "Fıstık Dilimi",
-      
-      image: "/image/1_1.jpg",
+      title: "Double Dürüm",
+      image: "/image/double.jpg",
     },
     {
       title: "Ayran",
-      
       image: "/image/kapali-Ayran.jpg",
     },
     {
       title: "Açık Ayran",
-      
       image: "/image/acıkAyran.jpg",
     },
     {
       title: "Kola",
-      
       image: "/image/kola.jpg",
     },
     {
       title: "Nigde Gazozu",
-     
       image: "/image/nigdegazoz.jpg",
     },
     {
       title: "Şalgam",
-     
       image: "/image/salgam.jpg",
     },
   ];

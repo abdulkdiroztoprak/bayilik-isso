@@ -1,46 +1,95 @@
 .header {
-    background-color: #f8f8f8; /* Açık gri bir arka plan */
-    padding: 20px 0; /* Üst ve alt boşluk */
-    border-bottom: 1px solid #eee; /* Alt çizgi */
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Navigasyon - Masaüstü */
+.navigation {
+  display: flex;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navigation li {
+  margin-left: 20px;
+}
+
+.navigation li:first-child {
+  margin-left: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #e44d26;
+}
+
+/* Menü Butonu (Mobil) */
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Medya Sorgusu - Mobil görünüm */
+@media (max-width: 768px) {
+  .mobile-menu-button {
+    display: block;
   }
-  
-  .container {
-    display: flex; /* Öğeleri yan yana sıralamak için flexbox kullanıyoruz */
-    justify-content: space-between; /* Logo ve navigasyonu aralarına boşluk bırakarak yerleştiriyoruz */
-    align-items: center; /* Dikey olarak ortalıyoruz */
-    max-width: 1200px; /* Maksimum genişlik */
-    margin: 0 auto; /* Yatayda ortalamak için */
-    padding: 0 20px; /* Yanlarda boşluk */
+
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 80px; /* header yüksekliği kadar */
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    z-index: 10;
   }
-  
-  .logo h1 {
-    margin: 0; /* Başlığın varsayılan boşluklarını kaldırıyoruz */
-    font-size: 24px; /* Logo font boyutu */
-    color: #333; /* Logo rengi */
+
+  .navigation.mobile-open {
+    display: flex;
   }
-  
+
   .navigation ul {
-    list-style: none; /* Liste işaretlerini kaldırıyoruz */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Linkleri yan yana sıralamak için */
+    flex-direction: column;
+    gap: 15px;
   }
-  
+
   .navigation li {
-    margin-left: 20px; /* Linkler arasında boşluk */
+    margin-left: 0;
   }
-  
-  .navigation li:first-child {
-    margin-left: 0; /* İlk linkin sol boşluğunu kaldırıyoruz */
-  }
-  
-  .navigation a {
-    text-decoration: none; /* Alt çizgiyi kaldırıyoruz */
-    color: #555; /* Link rengi */
-    font-weight: bold; /* Kalın yazı tipi */
-    transition: color 0.3s ease; /* Renk geçiş efekti */
-  }
-  
-  .navigation a:hover {
-    color: #e44d26; /* Üzerine gelindiğinde renk */
-  }
+}
