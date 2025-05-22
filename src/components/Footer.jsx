@@ -43,7 +43,7 @@ function Footer() {
             Paket Servis
           </Typography>
           <Typography variant="body1" className="phone-number">
-            0550 200 40 00
+            0507 557 8838
           </Typography>
         </Box>
 

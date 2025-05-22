@@ -8,6 +8,7 @@
   }
   
   .masa-button {
+    font-size: 14px;
     width: 180px;
     height: 120px;
     background-color: gray;
@@ -21,7 +22,10 @@
     justify-content: center;
     height: 100px; /* Tablet için ideal yükseklik */
   }
-  
+  .masa-button.aktif {
+  background-color: #4caf50; /* Yeşil */
+  color: #fff;
+}
   /* Telefonlar için (genişlik 768px'e kadar olan cihazlar için geçerli olacaktır) */
 @media (max-width: 768px) {
   .masalar-container {

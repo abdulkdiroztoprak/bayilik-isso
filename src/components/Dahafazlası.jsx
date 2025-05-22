@@ -18,9 +18,7 @@ function About() {
 Biz, sürekli gelişimi ve yeniliği ilke edinmiş bir ekip olarak; Yazılım, Tasarım ve Tekstil Baskı alanlarında faaliyet gösteriyor, her zaman daha ileriye ulaşmak adına durmaksızın çalışmaktayız. Hedeflerimize kararlılıkla yürürken gerektiğinde bu yolda koşmaktan da asla çekinmiyoruz.
 
 Kurmak istediğimiz bu yapının temelinde; vizyoner bakış açısı, güvenilir hizmet, yenilikçi çözümler ve müşteri memnuniyeti odaklı yaklaşım yer alıyor. Sadece bugünü değil, yarını da düşünen bir anlayışla ilerliyor; her adımda büyümeyi ve gelişmeyi hedefliyoruz.
-
 Müşterilerimizin ihtiyaçlarına en doğru ve etkili çözümleri sunmak için var gücümüzle çalışıyor; güçlü bir iletişim, profesyonel hizmet anlayışı ve etik değerlere bağlılık ile işimizi titizlikle yürütüyoruz.
-
 İşimizi sadece bir ticaret değil, bir sorumluluk ve değer üretme aracı olarak görüyor; topluma, sektöre ve geleceğe katkı sağlama misyonuyla yolumuza devam ediyoruz.
         </p>
         <br></br>
